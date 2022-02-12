@@ -1,0 +1,44 @@
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 80px 0px 20px 0px;
+    margin: 20px 0px;
+}
+
+.emailInput {
+    padding: 8px 20px;
+}
+
+.email {
+    height: 32px;
+    padding: 8px 20px;
+    margin: 20px;
+}
+
+.row {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.col {
+    color: #fff;
+    padding: 0px 50px;
+    display: inline-block;
+}
+
+div.col > p {
+    margin: 10px 0px;
+}
+
+.socialLogos {
+    gap: 1rem;
+    display: inline-flex;
+}
+
+@media screen and (max-width: 600px) {
+    .col {
+      width: 100%;
+    }
+  }
