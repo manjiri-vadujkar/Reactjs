@@ -1,9 +1,13 @@
-
 .footer {
-    background-color: black;
-    color: white;
-    padding: 80px 0px 20px 0px;
-    margin: 20px 0px;
+  background-color: black;
+  color: white;
+  padding: 80px 0px 20px 0px;
+  margin: 20px 0px 0px 0px;
+}
+
+.footer-subscription > p{
+  margin: 10px;
+  font-size: large;
 }
 
 .emailInput {
@@ -11,34 +15,50 @@
 }
 
 .email {
-    height: 32px;
-    padding: 8px 20px;
-    margin: 20px;
+  height: 32px;
+  padding: 8px 20px;
+  margin: 20px;
 }
 
 .row {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .col {
-    color: #fff;
-    padding: 0px 50px;
-    display: inline-block;
+  color: #fff;
+  padding: 30px 50px;
+  display: inline-block;
 }
 
-div.col > p {
-    margin: 10px 0px;
+div.footer-trademark > p {
+  margin: 0px 0px 0px 20px;
 }
 
-.socialLogos {
-    gap: 1rem;
-    display: inline-flex;
+.socialIcons {
+  gap: 1rem;
+  display: inline-flex;
 }
 
-@media screen and (max-width: 600px) {
-    .col {
-      width: 100%;
-    }
+.footer-logo {
+  color: #fff;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+
+@media (max-width: 750px) {
+  .row {
+    flex-direction: column;
   }
+
+  .socialMedia-wrap {
+    flex-direction: column;
+  }
+}

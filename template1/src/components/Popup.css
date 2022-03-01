@@ -1,0 +1,38 @@
+.popup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center; 
+    align-items: center; 
+    
+    background-color: rgba(255, 255, 255, .5);
+
+    animation: fadeInAnimation ease .8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.popup-content {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 12vh 8vw 12vh 8vw;
+    /* padding: 125px 100px 125px 100px; */
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
