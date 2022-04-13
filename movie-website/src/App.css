@@ -1,16 +1,92 @@
-.App {
-  text-align: center;
+ .App {
+  background-color: transparent;
 }
 
 .nav {
-  background-color: #282c34;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
 }
 
-.App-link {
-  color: #61dafb;
+.navlist {
+  margin: 0;
+  padding: 0; 
+  list-style: none;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  /* grid-template-columns: 100px 100px 150px 100px 100px; */
+   place-items: center;
+  grid-gap: 20px;
+  font-size: 24px;
 }
+
+.navlist li {
+  display: inline;
+  margin: 10px;
+  padding: 20px; 
+}
+
+.navlist li:hover {
+  cursor: pointer;
+  background-color: rgb(128, 128, 128, 0.5);
+}
+
+
+#li-logo {
+  margin: 0;
+  padding: 0; 
+}
+
+#li-logo:hover {
+  cursor: pointer;
+  background-color: transparent;
+  ;
+}
+
+.logo {
+  height: 100px;
+  border: 1px #282c34;
+  border-radius: 100px;
+}
+
+.content-text {
+  position: relative;
+  bottom: 0;
+  height: 500px;
+  margin: 20px;
+  background-color: transparent;
+  color: white;
+  z-index: 10;;
+}
+
+.content-video {
+  max-height: 100vh;
+  left: 0;
+  top: 0;
+  position: sticky;
+  z-index: -10;
+  display: flex;
+  justify-content: center;
+}
+
+.content-left {
+  display: block;
+  width: 30%;
+  float: left;
+}
+
+.content-right {
+  display: block;
+  width: 30%;
+  float: right;
+}
+ 
